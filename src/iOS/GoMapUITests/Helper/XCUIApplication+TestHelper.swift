@@ -9,9 +9,7 @@
 import XCTest
 
 extension XCUIApplication {
-    
     func tapBackButton() {
         navigationBars.buttons.element(boundBy: 0).tap()
     }
-    
 }

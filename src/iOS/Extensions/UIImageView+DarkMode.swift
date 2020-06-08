@@ -16,10 +16,10 @@ extension UIImageView {
             /// Dark Mode is only available with iOS 13.
             /// Default to black.
             tintColor = .black
-            
+
             return
         }
-        
+
         tintColor = .label
     }
 }

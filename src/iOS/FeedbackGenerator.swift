@@ -27,7 +27,7 @@ extension FeedbackGenerator: FeedbackGenerating {
             /// `UIFeedbackGenerator` is only available for iOS 10 and later.
             return
         }
-        
+
         switch type {
         case .error:
             let generator = UINotificationFeedbackGenerator()

@@ -7,16 +7,14 @@
 //
 
 @objc extension EditorMapLayer {
-    
     func observeQuestChanges() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didReceiveActiveQuestsChangedNotification(_:)),
                                                name: .QuestManagerDidUpdateActiveQuests,
                                                object: nil)
     }
-    
-    func didReceiveActiveQuestsChangedNotification(_ note: Notification) {
+
+    func didReceiveActiveQuestsChangedNotification(_: Notification) {
         resetDisplayLayers()
     }
-    
 }

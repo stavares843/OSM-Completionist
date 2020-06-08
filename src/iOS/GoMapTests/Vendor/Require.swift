@@ -29,13 +29,13 @@ public extension Optional {
             }
 
             #if !os(Linux)
-            let exception = NSException(
-                name: .invalidArgumentException,
-                reason: message,
-                userInfo: nil
-            )
+                let exception = NSException(
+                    name: .invalidArgumentException,
+                    reason: message,
+                    userInfo: nil
+                )
 
-            exception.raise()
+                exception.raise()
             #endif
 
             preconditionFailure(message)
